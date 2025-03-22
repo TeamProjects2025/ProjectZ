@@ -1,4 +1,4 @@
-package com.example.zomatoapplication.presentation.components
+package com.example.zomatoapplication.presentation.screens
 
 import android.widget.Toast
 import androidx.compose.foundation.Image
@@ -41,6 +41,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
@@ -195,7 +196,7 @@ fun SignupButton(){
           Toast.makeText(context,"SignUp Button",Toast.LENGTH_SHORT).show()
     },
         modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 16.dp, bottom = 14.dp).height(50.dp),
-        colors = ButtonDefaults.buttonColors(Color.Red),
+        colors = ButtonDefaults.buttonColors(colorResource(id = R.color.buttonColor)),
         elevation = ButtonDefaults.buttonElevation(4.dp),
         shape = RoundedCornerShape(12.dp)
         ) {

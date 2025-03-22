@@ -1,6 +1,4 @@
-package com.example.zomatoapplication.presentation.components
-
-
+package com.example.zomatoapplication.presentation.utils
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -34,8 +32,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.android.bottomsheet.components.CardLayout
-import com.android.bottomsheet.components.CardLists
+import com.android.bottomsheet.components.BlinkitBottomSheetCardLayout
+import com.android.bottomsheet.components.BlinkitBottomSheetCardLists
 import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
 import com.bumptech.glide.integration.compose.GlideImage
 import com.example.zomatoapplication.R
@@ -134,18 +132,18 @@ fun BottomSheetContent(modifier: Modifier){
             }
         }
         Spacer(modifier = Modifier.height(16.dp))
-        CardLayout()
+        BlinkitBottomSheetCardLayout()
         Spacer(modifier = modifier.height(12.dp))
         Text(text = "* ENJOY THESE BENEFITS *",
              modifier = Modifier.align(Alignment.CenterHorizontally),
              fontSize = 18.sp, fontWeight = FontWeight.SemiBold, letterSpacing = 4.sp, color = Color.DarkGray
             )
         Spacer(modifier = modifier.height(30.dp))
-        CardLists(drawable = R.drawable.foodbag, text = "Enjoy 5000+ products to suit\nyour needs")
+        BlinkitBottomSheetCardLists(drawable = R.drawable.foodbag, text = "Enjoy 5000+ products to suit\nyour needs")
         Spacer(modifier = modifier.height(14.dp))
-        CardLists(drawable = R.drawable.clock, text = "Everything delivered\nin minutes")
+        BlinkitBottomSheetCardLists(drawable = R.drawable.clock, text = "Everything delivered\nin minutes")
         Spacer(modifier = modifier.height(14.dp))
-        CardLists(drawable = R.drawable.voucher, text = "Amazing payment and\nbank offers")
+        BlinkitBottomSheetCardLists(drawable = R.drawable.voucher, text = "Amazing payment and\nbank offers")
         Spacer(modifier = modifier.height(14.dp))
     }
 }

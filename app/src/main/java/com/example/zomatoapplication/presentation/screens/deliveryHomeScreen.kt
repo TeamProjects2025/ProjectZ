@@ -13,7 +13,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun Delivery(modifier: Modifier = Modifier) {
+fun diliveryHomeScreen(modifier: Modifier = Modifier) {
 
     Column(modifier= Modifier.fillMaxSize().background(color = Color.Blue),
         verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {

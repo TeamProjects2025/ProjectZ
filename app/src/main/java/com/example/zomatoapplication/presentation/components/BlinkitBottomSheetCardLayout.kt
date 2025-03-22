@@ -36,7 +36,7 @@ import com.example.zomatoapplication.R
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
-fun CardLayout(){
+fun BlinkitBottomSheetCardLayout(){
     val context = LocalContext.current
     Card(onClick = { /*TODO*/ },
         shape = RoundedCornerShape(25.dp),

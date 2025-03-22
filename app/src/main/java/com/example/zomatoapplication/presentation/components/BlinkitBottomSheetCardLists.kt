@@ -26,7 +26,7 @@ import com.example.zomatoapplication.R
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
-fun CardLists(drawable: Int,text: String) {
+fun BlinkitBottomSheetCardLists(drawable: Int,text: String) {
     Card(onClick = {},
         shape = RoundedCornerShape(24.dp),
         border = BorderStroke(width = 0.3.dp, color = colorResource(id = R.color.gray)),

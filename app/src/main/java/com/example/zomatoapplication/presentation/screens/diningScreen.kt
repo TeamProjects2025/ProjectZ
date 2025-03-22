@@ -13,7 +13,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun Dining(modifier: Modifier = Modifier) {
+fun diningScreen(modifier: Modifier = Modifier) {
 
     Column(modifier= Modifier.fillMaxSize().background(color = Color.Magenta),
         verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {

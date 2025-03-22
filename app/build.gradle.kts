@@ -3,6 +3,9 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.google.gms.google.services)
+    id("com.google.dagger.hilt.android")
+    id("kotlin-kapt")
+    kotlin("plugin.serialization") version "2.0.0"
 }
 
 android {
@@ -73,5 +76,39 @@ dependencies {
     implementation("com.github.bumptech.glide:compose:1.0.0-alpha.1")
 
     implementation("androidx.compose.material:material-icons-extended:1.7.8")
+
+    // this ia for hillt dependency injection
+    implementation("com.google.dagger:hilt-android:2.50")
+    kapt("com.google.dagger:hilt-android-compiler:2.50")
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+    kapt("androidx.hilt:hilt-compiler:1.2.0")
+
+
+
+    // this is for coil
+    implementation("io.coil-kt:coil-compose:2.6.0")
+
+
+    // Navigation
+    implementation("androidx.navigation:navigation-compose:2.8.0-beta06")
+
+    // Serialization
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+
+
+
+    //this is for pager
+    implementation ("com.google.accompanist:accompanist-pager:0.28.0")
+    implementation ("com.google.accompanist:accompanist-pager-indicators:0.28.0")
+
+// this is for payment getway
+    implementation ("com.razorpay:checkout:1.6.40")
+
+
+    //custem bottom nev bar
+    implementation ("com.canopas.compose-animated-navigationbar:bottombar:1.0.1")
+
+
+
 
 }
